@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
         <form action="/registration" method="post">
-            <h1>Registration</h1>
+            <div class="form_css">
+                <h1>Registration</h1>
             <input type="text" placeholder="username" required name="username">
             <br>
             <input type="email" placeholder="email" required name="email">
@@ -16,8 +17,8 @@
             <input type="password" placeholder="password" required name="password">
             <br>
             <button type="submit">Registration</button>
+            </div>
+            <p>Have an account? <a href="login.html">Login</a></p>
         </form>
-        <p>Have an account? <a href="login.html">Login</a></p>
-    </center>
 </body>
 </html>
