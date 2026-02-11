@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="wrapper">
         <form action="/login" method="post">
-            <div class="form_css">
-                <h1>Login</h1>
-            <input type="email" placeholder="email" required name="email">
-            <br>
-            <input type="password" placeholder="password" required name="password">
-            <br>
-            <button type="submit">Login</button>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required name="email">
+                <i class="bx bx-user"></i>
             </div>
-            <p>Don`t have an account? <a href="registration.html">Registr</a></p>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required name="password">
+                <i class="bx bx-lock"></i>
+            </div>
+            
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox"> Remember Me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button class="btn" type="submit">Login</button>
+
+            <div class="register-link"><p>Don`t have an account? <a href="registration.html">Register</a></p></div>
         </form>
+    </div>
 </body>
 </html>
